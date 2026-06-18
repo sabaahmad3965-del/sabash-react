@@ -8,5 +8,27 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/style.css" rel="stylesheet" />
+    <script type="module">
+      import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/chat.bundle.es.js';
+
+      createChat({
+        webhookUrl: 'https://sabash3111-sabash-n8n.hf.space/webhook/62a63126-9c5c-4c3d-b729-029f9b89e72a/chat',
+        mode: 'window',
+        chatInputKey: 'chatInput',
+        initialMessages: [
+          'Hi there! 👋 My name is Zarah. How can I assist you today?'
+        ],
+        i18n: {
+          en: {
+            title: 'Sabash Restaurant 🍽️',
+            subtitle: 'Ask me about menu, reservations & more!',
+            inputPlaceholder: 'Type your message...',
+          }
+        }
+      });
+    </script>
+    <div id="n8n-chat"></div>
   </body>
 </html>
