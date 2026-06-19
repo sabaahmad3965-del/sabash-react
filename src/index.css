@@ -1740,6 +1740,14 @@ background-position: center;
   font-size: 14px;
 }
 
+/* .nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  position: relative;
+} */
+
 .nav-wrapper {
   display: flex;
   align-items: center;
@@ -1747,23 +1755,23 @@ background-position: center;
   padding: 0 20px;
   position: relative;
 }
-
+.nav-links {
+  display: flex;
+  gap: 58px;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
 .nav-wrapper .logo img {
   height: 70px;
   width: auto;
 }
-
-.nav-links {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-}
-
 .nav-links a {
   color: white;
   text-decoration: none;
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 19px;
+  font-weight: 900;
   padding: 5px 0;
   transition: color 0.2s;
 }
